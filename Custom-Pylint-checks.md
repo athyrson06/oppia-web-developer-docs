@@ -500,10 +500,10 @@ def test_finds_hello_world_assignment(self):
     filename = temp_file.name
 
     with open(filename, 'w') as tmp:
-            tmp.write("""
-            s = "Hello, world!"
-            print("Hello, world!")
-            """)
+        tmp.write("""
+        s = "Hello, world!"
+        print("Hello, world!")
+        """)
 
     node.file = filename
     node.path = filename
